@@ -1,18 +1,22 @@
-
 package com.github.hcsp.objectbasic;
-org.junit.jupiter.api.Test;;org.hamcrest.Matchers;;com.github.javaparser.ast.expr.CastExpr;;com.github.hcsp.test.helper.JavaASTReader;;com.github.blindpirate.extensions.CaptureSystemOutput;;org.junit.jupiter.api.Assertions;
 
-class MainTest {
-@Test
-public void hasCastExpr() {
-    Assertions.assertTrue(JavaASTReader.findAll(Main.class, CastExpr.class).size() > 0);
-}
+import com.github.blindpirate.extensions.CaptureSystemOutput;
+import com.github.hcsp.test.helper.JavaASTReader;
+import com.github.javaparser.ast.expr.CastExpr;
+import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-@Test
-@CaptureSystemOutput
-public void correctMethodInvocation(CaptureSystemOutput.OutputCapture outputCapture) {
-    outputCapture.expect(Matchers.containsString("I'm HashMap!"));
-    Main.main(null);
-}
+public class MainTest {
+    @Test
+    public void hasCastExpr() {
+        Assertions.assertTrue(JavaASTReader.findAll(Main.class, CastExpr.class).size() > 0);
+    }
 
+    @Test
+    @CaptureSystemOutput
+    public void correctMethodInvocation(CaptureSystemOutput.OutputCapture outputCapture) {
+        outputCapture.expect(Matchers.containsString("I'm HashMap!"));
+        Main.main(null);
+    }
 }
