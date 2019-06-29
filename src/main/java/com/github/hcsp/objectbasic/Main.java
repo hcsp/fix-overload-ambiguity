@@ -5,16 +5,7 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
         // 请修复这里的编译错误，令实际调用的方法是print(HashMap)
-        /**
-         * Object
-         *     -- Number
-         *          -- Integer
-         *     -- AbstractMap
-         *          -- HashMp
-         *
-         *                          print(null) 匹配了多个构造器， 需要强转类型
-         * */
-        print((HashMap)null);
+        print(null);
     }
 
     public static void print(int i) {
