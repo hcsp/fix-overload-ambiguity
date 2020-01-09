@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
         // 请修复这里的编译错误，令实际调用的方法是print(HashMap)
-       print(null);
+       print((HashMap) null);
 //        Object i = 0;
 //        print(i);
     }
@@ -14,13 +14,13 @@ public class Main {
         System.out.println("I'm int!");
     }
 
-//    public static void print(Integer i) {
-//        System.out.println("I'm Integer!");
-//    }
+    public static void print(Integer i) {
+        System.out.println("I'm Integer!");
+    }
 
-//    public static void print(Number i) {
-//        System.out.println("I'm Number!");
-//    }
+    public static void print(Number i) {
+        System.out.println("I'm Number!");
+    }
 
     public static void print(Object i) {
         System.out.println("I'm Object!");
