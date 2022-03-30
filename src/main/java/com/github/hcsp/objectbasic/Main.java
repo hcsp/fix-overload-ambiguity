@@ -3,9 +3,12 @@ package com.github.hcsp.objectbasic;
 import java.util.HashMap;
 
 public class Main {
+
+    private static HashMap HashMap;
+
     public static void main(String[] args) {
         // 请修复这里的编译错误，令实际调用的方法是print(HashMap)
-        print(null);
+        print(HashMap);
     }
 
     public static void print(int i) {
