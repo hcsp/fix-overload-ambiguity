@@ -8,17 +8,15 @@ public class Main {
         print(null);
     }
 
-    public static void print(int i) {
+   /* public static void print(int i) {
         System.out.println("I'm int!");
-    }
+    }*/
 
-    public static void print(Integer i) {
+   /* public static void print(Integer i) {
         System.out.println("I'm Integer!");
-    }
+    }*/
 
-    public static void print(Number i) {
-        System.out.println("I'm Number!");
-    }
+   /* public static void print(Number i) { System.out.println("I'm Number!"); } */
 
     public static void print(Object i) {
         System.out.println("I'm Object!");
