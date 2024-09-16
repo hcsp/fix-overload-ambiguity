@@ -1,30 +1,26 @@
-package com.github.hcsp.objectbasic;
-
+//package com.github.hcsp.objectbasic;
 import java.util.HashMap;
-
-public class Main {
-    public static void main(String[] args) {
-        // 请修复这里的编译错误，令实际调用的方法是print(HashMap)
-        print(null);
-    }
-
-    public static void print(int i) {
+class Main{
+    static void print(int i,int kd, int j, int k) {
         System.out.println("I'm int!");
     }
 
-    public static void print(Integer i) {
+    static void print(Integer i,Integer j) {
         System.out.println("I'm Integer!");
     }
 
-    public static void print(Number i) {
+    static void print(Number i,Number j,Number k) {
         System.out.println("I'm Number!");
     }
 
-    public static void print(Object i) {
+    static void print(Object i,Object k, Object l, Object e) {
         System.out.println("I'm Object!");
     }
-
-    public static void print(HashMap i) {
+    static void print(HashMap i) {
         System.out.println("I'm HashMap!");
+    }
+    public static void main(String args[]) {
+        // ??????????,?????????print(HashMap)
+        print(null);
     }
 }
