@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
         // 请修复这里的编译错误，令实际调用的方法是print(HashMap)
-        print(null);
+        print((HashMap)null);
     }
 
     public static void print(int i) {
